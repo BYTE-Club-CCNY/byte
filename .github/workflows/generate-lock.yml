@@ -1,0 +1,26 @@
+on: 
+    pull_request:
+        branches:
+            main
+
+permissions:
+  contents: write
+
+name: Generate Lockfile
+
+jobs:
+  generate-lock-file:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout-repo
+       uses: actions/checkout@v4
+     - name: install-node
+       uses: actions/setup-node@v4
+     - name: generate-lock-file
+       run: npm install
+     - name: Commit report
+       run: |
+          git config --global user.name 'fahad-githubaction'
+          git config --global user.email 'fahadfaruqi1@gmail.com'
+          git commit -am "adding lockfile"
+          git push
