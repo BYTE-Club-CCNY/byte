@@ -12,15 +12,24 @@ jobs:
   generate-lock-file:
     runs-on: ubuntu-latest
     steps:
-     - name: checkout-repo
-       uses: actions/checkout@v4
-     - name: install-node
-       uses: actions/setup-node@v4
-     - name: generate-lock-file
-       run: npm install
-     - name: Commit report
-       run: |
-          git config --global user.name 'fahad-githubaction'
-          git config --global user.email 'fahadfaruqi1@gmail.com'
-          git commit -am "adding lockfile"
-          git push
+    - name: Get the branch name
+      id: get-branch-name
+      run: echo ::set-output name=BRANCH_NAME::${{ github.head_ref }}
+
+    - name: Checkout repo 
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
+
+    - name: Install Node
+      uses: actions/setup-node@v4
+
+    - name: Generate Lock File
+      run: npm install
+      
+    - name: Push Lock File
+      run: |
+        git config --global user.name 'fahad-githubaction'
+        git config --global user.email 'fahadfaruqi1@gmail.com'
+        git commit -am "adding lockfile"
+        git push origin ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
