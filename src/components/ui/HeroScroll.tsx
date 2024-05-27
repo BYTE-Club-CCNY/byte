@@ -22,7 +22,7 @@ export function HeroScroll() {
         <Image
           src="https://codingwithkaushal.com/wp-content/uploads/2024/03/Devika-An-Open-Source-AI-Software-Engineer-1400x720.png"
           alt="hero image"
-          width={720}
+          width={1000}
           height={1400}
           //width="100%"
           //height="auto"
