@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v4
 
     - name: Generate Lock File
-      run: npm install
+      run: npm i --package-lock-only
       
     - name: Push Lock File
       run: |
