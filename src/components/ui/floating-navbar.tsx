@@ -19,7 +19,7 @@ export interface FloatingNavProps {
 }
 export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
   const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     //check if current is not undefined and is not a number
@@ -27,12 +27,12 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
       let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+        setVisible(true);
       } else {
         if (direction < 0) {
           setVisible(true);
         } else {
-          setVisible(false);
+          setVisible(true);
         }
       }
     }

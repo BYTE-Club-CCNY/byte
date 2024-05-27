@@ -9,19 +9,19 @@ const AboutSection = () => {
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: -70 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-6xl font-medium font-medium tracking-tight text-transparent md:text-7xl"
+        className="-translate-y-6 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium font-medium tracking-tight text-transparent md:text-7xl"
       >
         CCNY Byte
       </motion.h1>
       <motion.p
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: -70 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
@@ -29,18 +29,13 @@ const AboutSection = () => {
         }}
         className="text-center text-slate-400 pt-10 hidden sm:block text-lg"
       >
-        Are you interested in diving deeper into the world of technology? Byte
-        Club is the perfect place for you! We provide a supportive environment
-        where you can develop your coding skills and explore the exciting world
-        of Computer Science.
+        Work with like minded SWEs in CCNY
         <br />
-        Through workshops, projects and guest speakers from the industry, you'll
-        gain valuable experience and knowledge that will give you a head-start
-        in today's tech driven world.
+        Build amazing apps for your resume.
       </motion.p>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: -70 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
