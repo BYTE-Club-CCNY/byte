@@ -25,11 +25,12 @@ jobs:
       uses: actions/setup-node@v4
 
     - name: Generate Lock File
-      run: npm install
+      run: npm i --package-lock-only
       
     - name: Push Lock File
       run: |
         git config --global user.name 'fahad-githubaction'
         git config --global user.email 'fahadfaruqi1@gmail.com'
+        git add .
         git commit -am "adding lockfile"
         git push origin ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
