@@ -131,4 +131,4 @@ dist
 
 # node, jetbrains
 node_modules/
-.idea/
+.idea
