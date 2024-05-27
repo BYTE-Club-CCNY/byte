@@ -31,5 +31,6 @@ jobs:
       run: |
         git config --global user.name 'fahad-githubaction'
         git config --global user.email 'fahadfaruqi1@gmail.com'
+        git add .
         git commit -am "adding lockfile"
         git push origin ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
