@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { HeroScrollDemo } from "@/components/ui/HeroScrollDemo";
+import { HeroScroll } from "@/components/ui/HeroScroll";
 export default function Home() {
   return (
     <main>
-      <HeroScrollDemo />
+      <HeroScroll />
     </main>
   );
 }
