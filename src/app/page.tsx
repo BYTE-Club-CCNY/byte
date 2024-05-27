@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import Footer from '../components/Footer'
-
+"use client";
+import React from "react";
+import { HeroScroll } from "@/components/ui/HeroScroll";
+import AboutSection from "@/components/About";
 export default function Home() {
   return (
-      <div>
-
-      </div>
-  )
+    <main>
+      <HeroScroll />
+      <AboutSection />
+    </main>
+  );
 }
