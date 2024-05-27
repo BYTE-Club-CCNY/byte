@@ -2,6 +2,7 @@
 import React from "react";
 import { ContainerScroll } from "./container-scroll-animation";
 import Image from "next/image";
+import { relative } from "path";
 
 export function HeroScroll() {
   return (
@@ -19,10 +20,13 @@ export function HeroScroll() {
         }
       >
         <Image
-          src="https://img.freepik.com/premium-photo/young-girl-with-laptop-pink-hair-hot-looks_862994-25302.jpg"
+          src="https://codingwithkaushal.com/wp-content/uploads/2024/03/Devika-An-Open-Source-AI-Software-Engineer-1400x720.png"
           alt="hero image"
-          height={720}
-          width={1400}
+          width={720}
+          height={1400}
+          //width="100%"
+          //height="auto"
+          objectFit="cover"
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />
