@@ -8,20 +8,20 @@ export default function Navbar() {
     {
       name: "Logo",
       link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dar:text-white" />,
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Projects",
-      link: "/projects",
+      link: "#projects",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "About",
-      link: "/about",
+      link: "#about",
       // TODO :  Remove paranthases in case they aren't needed
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dar:text-white" />,
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
   return (
