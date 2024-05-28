@@ -1,18 +1,17 @@
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
-import { TextRevealCard } from "./ui/text-reveal-card";
 
 const Eboard = () => {
   const content = [
     {
-      title: "Member 1",
+      title: "Fahad Faruqi",
       description:
-        "Member 1 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the president of the club.",
+        "My dedication to this club comes from my passion for community & project building. Hackathons have shown me a whole new side of software engineering communities that I wish to replicate here in CCNY. I believe that by building projects with likeminded driven SWEs, we can create a community that fosters growth and learning. I use Linux btw 🤓",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoxOSeZgEPWt_2ALxGfXntM1lluajVUDWoh_W3m42kQ&s"
-            width={100}
-            height={100}
+            src="https://cdn.discordapp.com/attachments/831948449644544111/1245044742647976046/IMG_2836.JPG?ex=665751c6&is=66560046&hm=a51e1a8a98d897f9b1d699a5d72abdfe9e10dbfc9daaf489ccff8f213eeb2b69&"
+            width={300}
+            height={300}
             className="h-full w-full object-cover"
             alt="linear board demo"
           />
@@ -20,15 +19,15 @@ const Eboard = () => {
       ),
     },
     {
-      title: "Member 2",
+      title: "Baljinder Singh Hothi",
       description:
-        "Member 2 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the vice president of the club.",
+        "Many of you may know me, but my name is Baljinder. I'm a CS major passionate about ML and AI. I am dedicated to BYTE due to my own life experiences; When I was a freshman and sophomore, I lacked the necessary resources needed to build my own projects. My hope with BYTE is to help CCNY students who were in similar spots as myself grow their skills, become ready for real-world applications, and ideally land a MAANG internship. My hobbies include reading, gaming, and playing sports (basketball, volleyball, and rock climbing). BTW I'm the cool Eboard member 🦅",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi744a-tStMZK810sVFa8VL7do9K0xuMUS_9ewuM1agQ&s"
-            width={100}
-            height={100}
+            src="https://cdn.discordapp.com/attachments/1225268194542092318/1245075961280467075/3A9A636F-4773-4417-B58E-FA4F8FF88CA4-574-00000029AA7D3142.jpg?ex=66576ed9&is=66561d59&hm=6f939614489a8c439bbe4dcbc17a1024047b612fdaeaf41cd6b8cd15e8a24d61&"
+            width={300}
+            height={300}
             className="h-full w-full object-cover"
             alt="linear board demo"
           />
@@ -43,8 +42,8 @@ const Eboard = () => {
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cwvA0wtqWEhHtTkJwc9l34GiZyyPrxIX5rWcSD-eVw&s"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             className="h-full w-full object-cover"
             alt="linear board demo"
           />
@@ -59,27 +58,44 @@ const Eboard = () => {
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZ8eMwq-lE3t0qyeNBUtRdQE0NqVleqfk72onFG-thA&s"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             className="h-full w-full object-cover"
             alt="linear board demo"
           />
         </div>
       ),
     },
+    {
+      title: "Member 5",
+      description:
+        "Member 5 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the secretary of the club.",
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <img
+            src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/09/Plankton-Band-Geeks.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "",
+      description: "",
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white"></div>
+      ),
+    },
   ];
   return (
     <div>
-      <div className="-translate-y-[420px] flex items-center justify-center md:h-screen flex-col md:flex-row">
-        <div className="text-center px-4 md:text-start">
-          <TextRevealCard
-            text="Meet The Cabinet Members"
-            revealText="Meet The Cabinet Members"
-            className="items-center hidden md:block"
-          />
-        </div>
-      </div>
-      <div className="-translate-y-[820px]">
+      <h1 className="text-4xl text-center my-4 font-bold">
+        Meet the cabinet members
+      </h1>
+      <div>
         <StickyScroll content={content} />
       </div>
     </div>

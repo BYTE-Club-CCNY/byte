@@ -8,12 +8,8 @@ import { InfiniteMovingCardsDemo } from "@/components/projects";
 export default function Home() {
   return (
     <main>
-      <div id="home">
-        <HeroScroll />
-      </div>
-      <div id="about">
-        <AboutSection />
-      </div>
+      <HeroScroll />
+      <AboutSection />
       <Eboard />
       <InfiniteMovingCardsDemo />
     </main>
