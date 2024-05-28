@@ -3,13 +3,13 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 const Eboard = () => {
     const content = [
         {
-          title: "Member 1",
+          title: "Fahad Faruqi",
           description:
-            "Member 1 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the president of the club.",
+            "My dedication to this club comes from my passion for community & project building. Hackathons have shown me a whole new side of software engineering communities that I wish to replicate here in CCNY. I believe that by building projects with likeminded driven SWEs, we can create a community that fosters growth and learning. I use Linux btw 🤓",
             content: (
                 <div className="h-full w-full  flex items-center justify-center text-white">
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoxOSeZgEPWt_2ALxGfXntM1lluajVUDWoh_W3m42kQ&s"
+                    src="https://cdn.discordapp.com/attachments/831948449644544111/1245044742647976046/IMG_2836.JPG?ex=665751c6&is=66560046&hm=a51e1a8a98d897f9b1d699a5d72abdfe9e10dbfc9daaf489ccff8f213eeb2b69&"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
