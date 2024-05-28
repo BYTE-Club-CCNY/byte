@@ -19,13 +19,13 @@ const Eboard = () => {
           ),
         },
         {
-            title: "Member 2",
+            title: "Baljinder Singh Hothi",
             description:
-              "Member 2 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the vice president of the club.",
+              "Many of you may know me, but my name is Baljinder. Im a CS major interested in ML and AI. I am dedicated to BYTE as when I was a Freshman and Sophomore I lacked the necessary respources needed to build my own projects. My hope with BYTE is to help CCNY students who were in similar spots as myself to grow their skills and become ready for real world applications, and ideally land a MAANG internship just saying. My hobbies include reading, gaming, and playing sports(Basketball, Volleyball, and Rock Climbing).",
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi744a-tStMZK810sVFa8VL7do9K0xuMUS_9ewuM1agQ&s"
+                      src="https://cdn.discordapp.com/attachments/1225268194542092318/1245075961280467075/3A9A636F-4773-4417-B58E-FA4F8FF88CA4-574-00000029AA7D3142.jpg?ex=66576ed9&is=66561d59&hm=6f939614489a8c439bbe4dcbc17a1024047b612fdaeaf41cd6b8cd15e8a24d61&"
                       width={300}
                       height={300}
                       className="h-full w-full object-cover"
