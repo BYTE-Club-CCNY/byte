@@ -66,11 +66,38 @@ const Eboard = () => {
                   </div>
             ),
           },
+          {
+            title: "Member 5",
+            description:
+              "Member 5 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the secretary of the club.",
+              content: (
+                  <div className="h-full w-full  flex items-center justify-center text-white">
+                    <img
+                      src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/09/Plankton-Band-Geeks.png"
+                      width={300}
+                      height={300}
+                      className="h-full w-full object-cover"
+                      alt="linear board demo"
+                    />
+                  </div>
+            ),
+          },
+          {
+            title: "",
+            description:
+              "",
+              content: (
+                  <div className="h-full w-full  flex items-center justify-center text-white">
+                  </div>
+            ),
+          },
     ]
   return (
     <div>
       <h1 className="text-4xl text-center my-4 font-bold">Meet the cabinet members</h1>
-      <StickyScroll content={content} />
+      <div>
+        <StickyScroll content={content} />
+      </div>
     </div>
   );
 }
