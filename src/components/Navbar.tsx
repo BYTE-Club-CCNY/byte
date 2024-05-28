@@ -7,7 +7,7 @@ export default function Navbar() {
   const navItems = [
     {
       name: "Logo",
-      link: "/",
+      link: "#home",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {

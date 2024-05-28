@@ -6,8 +6,12 @@ import Eboard from "@/components/Eboard";
 export default function Home() {
   return (
     <main>
-      <HeroScroll />
-      <AboutSection />
+      <div id="home">
+        <HeroScroll />
+      </div>
+      <div id="about">
+        <AboutSection />
+      </div>
       <Eboard />
     </main>
   );
