@@ -1,7 +1,7 @@
 on: 
-    pull_request:
-        branches:
-            main
+  pull_request:
+    branches:
+      main
 
 permissions:
   contents: write
@@ -27,10 +27,16 @@ jobs:
     - name: Generate Lock File
       run: npm i --package-lock-only
       
+    - name: Check for changes
+      id: check-changes
+      run: echo ::set-output name=lockfile_changed::$(if git diff --exit-code --quiet; then echo "false"; else echo "true"; fi)
+
     - name: Push Lock File
       run: |
-        git config --global user.name 'fahad-githubaction'
-        git config --global user.email 'fahadfaruqi1@gmail.com'
-        git add .
-        git commit -am "adding lockfile"
-        git push origin ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
+        if [[ "${{ steps.check-changes.outputs.lockfile_changed }}" == "true" ]]; then
+          git config --global user.name 'fahad-githubaction'
+          git config --global user.email 'fahadfaruqi1@gmail.com'
+          git add .
+          git commit -am "adding lockfile"
+          git push origin ${{ steps.get-branch-name.outputs.BRANCH_NAME }}
+        fi
