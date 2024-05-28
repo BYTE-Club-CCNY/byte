@@ -9,7 +9,7 @@ const AboutSection = () => {
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
@@ -21,7 +21,7 @@ const AboutSection = () => {
       </motion.h1>
       <motion.p
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
@@ -35,7 +35,7 @@ const AboutSection = () => {
       </motion.p>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,

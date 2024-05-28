@@ -70,7 +70,7 @@ const Eboard = () => {
   ];
   return (
     <div>
-      <div className="-translate-y-[320px] flex items-center justify-center md:h-screen flex-col md:flex-row">
+      <div className="-translate-y-[420px] flex items-center justify-center md:h-screen flex-col md:flex-row">
         <div className="text-center px-4 md:text-start">
           <TextRevealCard
             text="Meet The Cabinet Members"
@@ -79,7 +79,7 @@ const Eboard = () => {
           />
         </div>
       </div>
-      <div className="-translate-y-[615px]">
+      <div className="-translate-y-[820px]">
         <StickyScroll content={content} />
       </div>
     </div>
