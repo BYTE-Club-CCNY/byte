@@ -2,7 +2,6 @@
 import React from "react";
 import { ContainerScroll } from "./container-scroll-animation";
 import Image from "next/image";
-import { relative } from "path";
 
 export function HeroScroll() {
   return (
