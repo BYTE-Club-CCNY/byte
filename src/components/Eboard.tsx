@@ -67,9 +67,9 @@ const Eboard = () => {
             ),
           },
           {
-            title: "Member 5",
+            title: "Alvee",
             description:
-              "Member 5 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the secretary of the club.",
+              "Hello, My name is Muhammad Khan better known by my peers as Alvee. I am the newest member of the E-board and BYTE's very own community and social media manager. My aim is to foster a good, healthy and cooperative environment for our talented club members and ensure your experience here is fantastic. Should you have any queries and questions about how the club operates and the people you will work with, I am your man.",
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
