@@ -73,7 +73,7 @@ const Eboard = () => {
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
-                      src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/09/Plankton-Band-Geeks.png"
+                      src="https://byte-media.s3.us-east-2.amazonaws.com/alvee.jpg"
                       width={300}
                       height={300}
                       className="h-full w-full object-cover"
