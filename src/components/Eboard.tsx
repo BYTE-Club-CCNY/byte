@@ -9,7 +9,7 @@ const Eboard = () => {
             content: (
                 <div className="h-full w-full  flex items-center justify-center text-white">
                   <img
-                    src="https://cdn.discordapp.com/attachments/831948449644544111/1245044742647976046/IMG_2836.JPG?ex=665751c6&is=66560046&hm=a51e1a8a98d897f9b1d699a5d72abdfe9e10dbfc9daaf489ccff8f213eeb2b69&"
+                    src="https://byte-media.s3.us-east-2.amazonaws.com/fahad.jpeg"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
