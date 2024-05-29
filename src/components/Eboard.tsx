@@ -9,7 +9,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://cdn.discordapp.com/attachments/831948449644544111/1245044742647976046/IMG_2836.JPG?ex=665751c6&is=66560046&hm=a51e1a8a98d897f9b1d699a5d72abdfe9e10dbfc9daaf489ccff8f213eeb2b69&"
+            src="https://byte-media.s3.us-east-2.amazonaws.com/fahad.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -25,7 +25,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://cdn.discordapp.com/attachments/1225268194542092318/1245075961280467075/3A9A636F-4773-4417-B58E-FA4F8FF88CA4-574-00000029AA7D3142.jpg?ex=66576ed9&is=66561d59&hm=6f939614489a8c439bbe4dcbc17a1024047b612fdaeaf41cd6b8cd15e8a24d61&"
+            src="https://byte-media.s3.us-east-2.amazonaws.com/eboard_jinder.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -35,13 +35,13 @@ const Eboard = () => {
       ),
     },
     {
-      title: "What the sigma?",
+      title: "Jawad Kabir",
       description:
-        "Member 3 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the secratary of the club.",
+        "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a conductive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cwvA0wtqWEhHtTkJwc9l34GiZyyPrxIX5rWcSD-eVw&s"
+            src="https://byte-media.s3.us-east-2.amazonaws.com/jawad.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -51,13 +51,13 @@ const Eboard = () => {
       ),
     },
     {
-      title: "Member 4",
+      title: "Ishmam Fardin",
       description:
-        "Member 4 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the treasurer of the club.",
+        "My motivation for founding this club stems from my fascination with the driven, competitive, and social nature of hackathons, alongside my desire to find a community embodying these qualities at City College. At our school, I noticed a disconnect among Computer Science students and a lack of facilities providing hands-on experience with guidance. Through BYTE, I aim to mentor members with my knowledge and advice, guide them in building their projects, and create an environment for growth and success.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZ8eMwq-lE3t0qyeNBUtRdQE0NqVleqfk72onFG-thA&s"
+            src="https://byte-media.s3.us-east-2.amazonaws.com/ishmam.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
