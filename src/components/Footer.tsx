@@ -1,8 +1,13 @@
-import {redirect} from 'next/navigation'
-import {IoLogoGithub, IoLogoLinkedin, IoLogoInstagram, IoLogoDiscord} from 'react-icons/io5';
+import { redirect } from "next/navigation";
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoInstagram,
+  IoLogoDiscord,
+} from "react-icons/io5";
+import Link from "next/link";
 
 export default function Footer() {
-
     return (
         <footer className="flex sm:justify-end mt-1.5 sm:flex-row">
             <div>

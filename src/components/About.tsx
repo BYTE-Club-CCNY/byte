@@ -9,25 +9,25 @@ const AboutSection = () => {
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="-translate-y-6 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium font-medium tracking-tight text-transparent md:text-7xl"
+        className="-translate-y-6 bg-gradient-to-br text-white to-text-white py-4 bg-clip-text text-center text-2xl font-semibold tracking-tight text-transparent md:text-7xl"
       >
         CCNY Byte
       </motion.h1>
       <motion.p
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="text-center text-slate-400 pt-10 hidden sm:block text-lg"
+        className="text-center text-white pt-10 hidden sm:block text-lg"
       >
         Work with like minded SWEs in CCNY
         <br />
@@ -35,7 +35,7 @@ const AboutSection = () => {
       </motion.p>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: -70 }}
+        whileInView={{ opacity: 1, y: -50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,

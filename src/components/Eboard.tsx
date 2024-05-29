@@ -100,6 +100,7 @@ const Eboard = () => {
       </div>
     </div>
   );
-}
+};
+
 
 export default Eboard;
