@@ -51,9 +51,9 @@ const Eboard = () => {
             ),
           },
           {
-            title: "Jason D Rosario",
+            title: "Ishmam Fardin",
             description:
-              "Salutations everyone, this is JD speaking! I love chegg and I love chatgpt.",
+              "My motivation for founding this club stems from my fasciation by the driven, competitive, and social nature of hackathons alongside my own desire to find a community that has those qualities within City College. I felt like there was a disconnect between Computer Science students, and a lack of fascilities to provide hands on experience with some guidance within our school. Through BYTE, my goal is to mentor members with advice and knowledge I know, guide them through building their projects, and create an environment for growth and success. \n Currently a junior and graduating May 2025. My hobbies include but not limited to trying new things, sports, writing and reading. 'I’m so first class, I can hand out a syllabus'",
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
