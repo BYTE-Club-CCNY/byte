@@ -35,9 +35,9 @@ const Eboard = () => {
             ),
           },
           {
-            title: "What the sigma?",
+            title: "Jawad Kabir",
             description:
-              "Member 3 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the secratary of the club.",
+              "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a conductive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential.",
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
@@ -51,13 +51,13 @@ const Eboard = () => {
             ),
           },
           {
-            title: "Member 4",
+            title: "Jason D Rosario",
             description:
-              "Member 4 description. I go to ccny and I am a computer science major. I like to code and play video games in my free time and I am a member of the eboard. I am the treasurer of the club.",
+              "Salutations everyone, this is JD speaking! I love chegg and I love chatgpt.",
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZ8eMwq-lE3t0qyeNBUtRdQE0NqVleqfk72onFG-thA&s"
+                      src="https://images-ext-1.discordapp.net/external/l7QnelgBWSUoVnIZ_zmXc0Ahj1GrsuwSyriWcv4k11U/https/cdn.discordapp.com/emojis/1149143530351112202.png?format=webp&quality=lossless"
                       width={300}
                       height={300}
                       className="h-full w-full object-cover"
