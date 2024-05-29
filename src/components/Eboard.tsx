@@ -25,7 +25,7 @@ const Eboard = () => {
               content: (
                   <div className="h-full w-full  flex items-center justify-center text-white">
                     <img
-                      src="https://cdn.discordapp.com/attachments/1225268194542092318/1245075961280467075/3A9A636F-4773-4417-B58E-FA4F8FF88CA4-574-00000029AA7D3142.jpg?ex=66576ed9&is=66561d59&hm=6f939614489a8c439bbe4dcbc17a1024047b612fdaeaf41cd6b8cd15e8a24d61&"
+                      src="https://byte-media.s3.us-east-2.amazonaws.com/eboard_jinder.jpg"
                       width={300}
                       height={300}
                       className="h-full w-full object-cover"
