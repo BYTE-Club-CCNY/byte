@@ -9,9 +9,9 @@ export function HeroScroll() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="mb-8 text-4xl font-semibold text-white dar:text-white">
+            <h1 className="p-16 pt-0 mb-8 text-4xl font-sans font-semibold text-black dar:text-white">
               Join Us And Build Your <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none py-5">
+              <span className="text-4xl md:text-[6rem] font-sans font-bold mt-1 leading-none py-5">
                 Technical Experience
               </span>
             </h1>
@@ -19,7 +19,7 @@ export function HeroScroll() {
         }
       >
         <Image
-          src="https://codingwithkaushal.com/wp-content/uploads/2024/03/Devika-An-Open-Source-AI-Software-Engineer-1400x720.png"
+          src="https://byte-media.s3.us-east-2.amazonaws.com/byte-group.jpg"
           alt="hero image"
           width={1000}
           height={1400}
