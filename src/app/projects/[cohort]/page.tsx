@@ -9,4 +9,4 @@ const ProjectsByCohort = () => {
 }
 
 
-export default Projects;
+export default ProjectsByCohort;

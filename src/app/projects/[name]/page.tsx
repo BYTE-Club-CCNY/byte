@@ -7,3 +7,5 @@ const ProjectsByName = () => {
         </>
     )
 }
+
+export default ProjectsByName;
