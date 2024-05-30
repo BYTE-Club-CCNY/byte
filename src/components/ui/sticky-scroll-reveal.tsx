@@ -55,11 +55,12 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[1],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[30rem] overflow-y-auto flex justify-center relative lg:space-x-10 rounded-md -space-x-2 lg:p-10"
+      // -space-x-2 & lg:p-10 help image fit on mobile
       ref={ref}
     >
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
+      <div className="div relative flex items-start lg:px-0 px-1.5">
+        <div className="max-w-screen-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
@@ -67,7 +68,7 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.6,
                 }}
                 className="text-2xl font-bold text-slate-100"
               >
@@ -78,9 +79,9 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.6,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg text-slate-300 max-w-sm"
               >
                 {item.description}
               </motion.p>
@@ -94,7 +95,7 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-20 justify-center overflow-hidden",
+          "lg:block h-60 w-80 lg:flex-row lg:rounded-md bg-white sticky top-20 justify-center overflow-hidden rounded-full",
           contentClassName,
         )}
       >

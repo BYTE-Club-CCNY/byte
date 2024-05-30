@@ -24,7 +24,7 @@ const Eboard = () => {
       description:
         "Many of you may know me, but my name is Baljinder. I'm a CS major passionate about ML and AI. I am dedicated to BYTE due to my own life experiences; When I was a freshman and sophomore, I lacked the necessary resources needed to build my own projects. My hope with BYTE is to help CCNY students who were in similar spots as myself grow their skills, become ready for real-world applications, and ideally land a MAANG internship. My hobbies include reading, gaming, and playing sports (basketball, volleyball, and rock climbing). BTW I'm the cool Eboard member 🦅",
       content: (
-        <div className="h-full w-full  flex items-center justify-center">
+        <div className="h-full w-full flex items-center justify-center">
           <img
             src="https://byte-media.s3.us-east-2.amazonaws.com/eboard_jinder.jpg"
             width={300}
