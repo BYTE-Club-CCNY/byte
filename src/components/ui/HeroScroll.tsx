@@ -2,7 +2,6 @@
 import React from "react";
 import { ContainerScroll } from "./container-scroll-animation";
 import Image from "next/image";
-import BYTE from "../images/BYTE.png";
 
 export function HeroScroll() {
   return (
@@ -20,7 +19,7 @@ export function HeroScroll() {
         }
       >
         <Image
-          src={BYTE}
+          src="https://byte-media.s3.us-east-2.amazonaws.com/byte-group.jpg"
           alt="hero image"
           width={1000}
           height={1400}
