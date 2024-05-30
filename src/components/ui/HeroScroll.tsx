@@ -2,6 +2,7 @@
 import React from "react";
 import { ContainerScroll } from "./container-scroll-animation";
 import Image from "next/image";
+import BYTE from "../images/BYTE.png";
 
 export function HeroScroll() {
   return (
@@ -9,7 +10,7 @@ export function HeroScroll() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="mb-8 text-4xl font-sans font-semibold text-white dar:text-white">
+            <h1 className="mb-8 text-4xl font-sans font-semibold text-black dar:text-white">
               Join Us And Build Your <br />
               <span className="text-4xl md:text-[6rem] font-sans font-bold mt-1 leading-none py-5">
                 Technical Experience
@@ -19,7 +20,7 @@ export function HeroScroll() {
         }
       >
         <Image
-          src="https://codingwithkaushal.com/wp-content/uploads/2024/03/Devika-An-Open-Source-AI-Software-Engineer-1400x720.png"
+          src={BYTE}
           alt="hero image"
           width={1000}
           height={1400}

@@ -27,12 +27,12 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
       let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(true);
+        setVisible(false);
       } else {
         if (direction < 0) {
           setVisible(true);
         } else {
-          setVisible(true);
+          setVisible(false);
         }
       }
     }
@@ -43,7 +43,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
       <motion.div
         initial={{
           opacity: 1,
-          y: -100,
+          y: -200,
         }}
         animate={{
           y: visible ? 0 : -100,
