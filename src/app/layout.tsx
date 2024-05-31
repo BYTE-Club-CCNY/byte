@@ -23,6 +23,12 @@ export default function RootLayout({
         scrollBehavior: "smooth",
       }}
     >
+      <head>
+        <link
+          rel="icon"
+          href="https://byte-media.s3.us-east-2.amazonaws.com/ccny_logo.png"
+        />
+      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <main className="flex-grow">{children}</main>
         <Navbar />
@@ -31,3 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
+// https://byte-media.s3.us-east-2.amazonaws.com/ccny_logo.png
