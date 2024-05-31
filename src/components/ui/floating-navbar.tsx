@@ -26,7 +26,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < -10) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -43,14 +43,14 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
       <motion.div
         initial={{
           opacity: 1,
-          y: -200,
+          y: -10,
         }}
         animate={{
-          y: visible ? 0 : -100,
+          y: visible ? 0 : -1,
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.1,
         }}
         className={cn(
           "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] pr-2 pl-2 py-1 px-5 items-center justify-center space-x-0.2",

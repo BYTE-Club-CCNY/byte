@@ -1,8 +1,19 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+
+// dark mode check to determine component background color
+const isDarkMode = () => {
+  if (typeof window !== "undefined") {
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+  }
+  return false;
+};
 
 export const StickyScroll = ({
   content,
@@ -24,6 +35,24 @@ export const StickyScroll = ({
     offset: ["start start", "end start"],
   });
   const cardLength = content.length;
+
+  const [isDark, setIsDark] = useState(isDarkMode());
+
+  useEffect(() => {
+    const handleChange = () => {
+      setIsDark(isDarkMode());
+    };
+    if (typeof window !== "undefined") {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", handleChange);
+      return () => {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .removeEventListener("change", handleChange);
+      };
+    }
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
@@ -53,7 +82,7 @@ export const StickyScroll = ({
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[1],
+        backgroundColor: isDark ? backgroundColors[2] : backgroundColors[1],
       }}
       className="h-[30rem] overflow-y-auto flex justify-center relative lg:space-x-10 rounded-md -space-x-2 lg:p-10"
       // -space-x-2 & lg:p-10 help image fit on mobile
