@@ -8,6 +8,7 @@ const Projects = async () => {
             <h1>Projects</h1>
     
                 {projectsJson.map((project: any) => (
+                    console.log(project.name),
                     <>
                         <p>{project.name}</p>
                         <GoToProject name = {project.name}/>
