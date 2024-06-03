@@ -91,6 +91,7 @@ const Eboard = () => {
   return (
     <div>
       <h1 className="text-4xl text-center my-4 font-bold">
+
         Meet the cabinet members
       </h1>
       <div className="">

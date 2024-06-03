@@ -18,7 +18,6 @@ export default function Navbar() {
     {
       name: "About",
       link: "#about",
-      // TODO :  Remove paranthases in case they aren't needed
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
