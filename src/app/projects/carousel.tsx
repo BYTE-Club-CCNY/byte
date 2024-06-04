@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "@/components/ui/embla-thumb";
 
 type PropType = {
-  slides: number[];
+  slides: string[];
   options?: EmblaOptionsType;
 };
 
@@ -19,7 +19,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   const onThumbClick = useCallback(
     (index: number) => {
-      console.log(index);
       if (!emblaMainApi || !emblaThumbsApi) return;
       emblaMainApi.scrollTo(index);
     },
@@ -43,9 +42,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index}</div>
+              <div className="embla__slide__number">{slide}</div>
             </div>
           ))}
         </div>
@@ -54,7 +53,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
           <div className="embla-thumbs__container">
-            {slides.map((index) => (
+            {slides.map((slide, index) => (
               <Thumb
                 key={index}
                 onClick={() => onThumbClick(index)}
