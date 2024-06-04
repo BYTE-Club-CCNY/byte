@@ -2,7 +2,7 @@
 import React from "react";
 import { HeroScroll } from "@/components/ui/HeroScroll";
 import Eboard from "@/components/Eboard";
-import EmblaCarousel from "@/components/ui/carousel";
+import EmblaCarousel from "@/app/projects/carousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "@/components/ui/css/embla.css";
 import "@/components/ui/css/sandbox.css";

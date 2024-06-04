@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import { Thumb } from "./embla-thumb";
+import { Thumb } from "@/components/ui/embla-thumb";
 
 type PropType = {
   slides: number[];
@@ -44,7 +44,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+              <div className="embla__slide__number">{index + 5}</div>
             </div>
           ))}
         </div>
