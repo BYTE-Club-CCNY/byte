@@ -8,14 +8,17 @@ import "@/components/ui/css/embla.css";
 import "@/components/ui/css/sandbox.css";
 
 const OPTIONS: EmblaOptionsType = {};
-const SLIDE_COUNT = 10;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-export default function Home() {
+export default async function Home() {
+  const projects = await fetch("http://18.117.235.144/projects");
+  const projectsJson = await projects.json();
   return (
     <main className="light:bg-[#e5e7eb]">
       <HeroScroll />
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <EmblaCarousel
+        slides={projectsJson.map((project: any) => project.name)}
+        options={OPTIONS}
+      />
       <Eboard />
     </main>
   );

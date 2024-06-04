@@ -8,6 +8,26 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
+export const Projects = async () => {
+  const projects = await fetch("http://18.117.235.144/projects");
+  const projectsJson = await projects.json();
+  return (
+    <>
+      console.log(project.name)
+      {/* {projectsJson.map(
+        (project: any) => (
+          console.log(project.name),
+          (
+            <>
+              <p>{project.name}</p>
+            </>
+          )
+        ),
+      )} */}
+    </>
+  );
+};
+
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -44,7 +64,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 5}</div>
+              <div className="embla__slide__number">{Projects.json}</div>
             </div>
           ))}
         </div>
