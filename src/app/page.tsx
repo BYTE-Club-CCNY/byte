@@ -17,7 +17,6 @@ export default function Home() {
         const response = await fetch("http://18.117.235.144/projects");
         const data = await response.json();
         setProjects(data);
-        console.log(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -31,7 +30,7 @@ export default function Home() {
     <main className="light:bg-[#e5e7eb]">
       <HeroScroll />
       <EmblaCarousel
-        slides={projects.map((project: any) => project.name)}
+        slides={projects.map((project: any) => ({ name: project.name, image: project.image }))}
         options={OPTIONS}
       />
       <Eboard />
