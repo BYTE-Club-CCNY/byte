@@ -89,8 +89,9 @@ const Eboard = () => {
     },
   ];
   return (
-    <div id="about">
-      <h1 className="bg-red-50 text-4xl text-center my-4 font-bold">
+    <div>
+      <h1 className="text-4xl text-center my-4 font-bold">
+
         Meet the cabinet members
       </h1>
       <div className="">

@@ -9,7 +9,7 @@ export function HeroScroll() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="p-16 pt-0 mb-8 text-4xl font-sans font-semibold text-black dark:text-white dar:text-white">
+            <h1 className="p-16 pt-0 mb-8 text-4xl font-sans font-semibold text-black dark:text-white">
               Join Us And Build Your <br />
               <span className="text-4xl md:text-[6rem] font-sans font-bold mt-1 leading-none py-5">
                 Technical Experience
