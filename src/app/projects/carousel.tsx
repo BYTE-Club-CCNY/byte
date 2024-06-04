@@ -18,11 +18,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   });
 
   const onThumbClick = useCallback(
-    (index: number) => {
-      if (!emblaMainApi || !emblaThumbsApi) return;
-      emblaMainApi.scrollTo(index);
-    },
-    [emblaMainApi, emblaThumbsApi],
+      (index: number) => {
+        if (!emblaMainApi || !emblaThumbsApi) return;
+        emblaMainApi.scrollTo(index);
+      },
+      [emblaMainApi, emblaThumbsApi]
   );
 
   const onSelect = useCallback(() => {
@@ -39,32 +39,33 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaMainRef}>
-        <div className="embla__container">
-          {slides.map((slide, index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{slide}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="embla-thumbs">
-        <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container">
+      <div className="embla">
+        <div className="embla__viewport" ref={emblaMainRef}>
+          <div className="embla__container">
             {slides.map((slide, index) => (
-              <Thumb
-                key={index}
-                onClick={() => onThumbClick(index)}
-                selected={index === selectedIndex}
-                index={index}
-              />
+                <div className="embla__slide" key={index}>
+                  <div className="embla__slide__number">{slide}</div>
+                </div>
             ))}
           </div>
         </div>
+
+        <div className="embla-thumbs">
+          <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
+            <div className="embla-thumbs__container">
+              {slides.map((slide, index) => (
+                  <Thumb
+                      key={index}
+                      onClick={() => onThumbClick(index)}
+                      selected={index === selectedIndex}
+                      index={index}
+                      label={slide} // <- added slide parameter in embla-thumb.tsx (docs)
+                  />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   );
 };
 
