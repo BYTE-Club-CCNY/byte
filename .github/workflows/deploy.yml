@@ -1,0 +1,23 @@
+name: Deploy to Amplify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Amplify CLI
+        run: npm install -g @aws-amplify/cli
+
+      - name: Configure Amplify
+        run: amplify configure 
+
+      - name: Deploy to Amplify
+        run: amplify publish
