@@ -1,5 +1,5 @@
 .embla {
-    max-width: 50rem;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -7,9 +7,11 @@
     --slide-spacing: 1rem;
     --slide-size: 100%;
 }
+
 .embla__viewport {
-    overflow: visible;
+    overflow: hidden;
 }
+
 .embla__container {
     max-width: 24rem;
     backface-visibility: hidden;
@@ -17,6 +19,7 @@
     touch-action: pan-y pinch-zoom;
     margin-left: calc(var(--slide-spacing) * -1);
 }
+
 .embla__slide__description {
     display: flex;
     font-size: 15px;
@@ -25,30 +28,43 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .embla__slide__description span {
     align-self: flex-end;
 }
+
 .embla__slide {
-    display: flex; /* new */
+    display: flex;
+    /* new */
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
 }
+
 .embla__slide__number {
     box-shadow: inset 0 0 0 0.2rem #bfc4d0;
     border-radius: 1.8rem;
     font-size: 2rem;
     font-weight: 500;
     align-items: flex-start;
-    /*justify-content: center;*/
-    /*height: var(--slide-height);*/
     text-size: 1.25;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    justify-content: space-between;
+    height: var(--slide-height);
+    padding: 2px;
 }
+
+.embla__slide__name {
+    margin-top: 5px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
 .embla__slide__image {
     max-width: 30rem;
     max-height: 22rem;
@@ -60,30 +76,36 @@
     margin-right: 15px;
     margin-top: 10px;
 }
+
 .embla-thumbs {
     --thumbs-slide-spacing: 0.8rem;
     --thumbs-slide-height: 6rem;
     margin-top: var(--thumbs-slide-spacing);
+    justify-content: center;
 }
 
 .embla-thumbs__viewport {
     overflow: hidden;
 }
+
 .embla-thumbs__container {
     display: flex;
     flex-direction: row;
     margin-left: calc(var(--thumbs-slide-spacing) * -1);
 }
+
 .embla-thumbs__slide {
     flex: 0 0 22%;
     min-width: 0;
     padding-left: var(--thumbs-slide-spacing);
 }
+
 @media (min-width: 576px) {
     .embla-thumbs__slide {
-        flex: 0 0 30%;
+        flex: 0 0 17%;
     }
 }
+
 .embla-thumbs__slide__number {
     border-radius: 1.8rem;
     -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
@@ -107,6 +129,7 @@
     height: var(--thumbs-slide-height);
     width: 100%;
 }
+
 .embla-thumbs__slide--selected .embla-thumbs__slide__number {
     color: var(--text-body);
 }
