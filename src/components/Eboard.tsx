@@ -9,11 +9,11 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/fahad.jpeg"
+            src="https://d1tzawfcgeew72.cloudfront.net/fahad.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="fahad faruqi photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -26,11 +26,11 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/eboard_jinder.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/eboard_jinder.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="baljinder singh hothi photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -43,11 +43,11 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/jawad.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/jawad.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="jawad kabir photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -60,11 +60,11 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/ishmam.jpeg"
+            src="https://d1tzawfcgeew72.cloudfront.net/ishmam.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="ishmam fardin photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -77,11 +77,11 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/alvee.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/alvee.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="alvee photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
