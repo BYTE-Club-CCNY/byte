@@ -53,7 +53,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: var(--slide-height);
-    padding: 2px;
+    padding: 1px;
 }
 
 .embla__slide__name {
