@@ -4,7 +4,7 @@ type PropType = {
   selected: boolean;
   index: number;
   label: string;
-  description: string;
+  description?: string;
   onClick: () => void;
 };
 
