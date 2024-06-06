@@ -19,7 +19,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: "keepSnaps",
+    containScroll: "trimSnaps",
     dragFree: true,
   });
 
