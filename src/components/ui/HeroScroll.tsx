@@ -19,7 +19,7 @@ export function HeroScroll() {
         }
       >
         <Image
-          src="https://byte-media.s3.us-east-2.amazonaws.com/byte-group.jpg"
+          src="https://d1tzawfcgeew72.cloudfront.net/byte-group.jpg"
           alt="hero image"
           width={1000}
           height={1400}
