@@ -9,7 +9,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/fahad.jpeg"
+            src="https://d1tzawfcgeew72.cloudfront.net/fahad.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -26,7 +26,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/eboard_jinder.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/eboard_jinder.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -43,7 +43,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/jawad.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/jawad.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -60,7 +60,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/ishmam.jpeg"
+            src="https://d1tzawfcgeew72.cloudfront.net/ishmam.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -77,7 +77,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
-            src="https://byte-media.s3.us-east-2.amazonaws.com/alvee.jpg"
+            src="https://d1tzawfcgeew72.cloudfront.net/alvee.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -91,7 +91,6 @@ const Eboard = () => {
   return (
     <div>
       <h1 className="text-4xl text-center my-4 font-bold">
-
         Meet the cabinet members
       </h1>
       <div className="">
