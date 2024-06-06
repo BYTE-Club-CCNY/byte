@@ -20,7 +20,6 @@ export default function Home() {
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
-
     };
 
     fetchProjects();
@@ -30,7 +29,11 @@ export default function Home() {
     <main className="light:bg-[#e5e7eb]">
       <HeroScroll />
       <EmblaCarousel
-        slides={projects.map((project: any) => ({ name: project.name, image: project.image }))}
+        slides={projects.map((project: any) => ({
+          name: project.name,
+          image: project.image,
+          description: project["short-description"],
+        }))}
         options={OPTIONS}
       />
       <Eboard />

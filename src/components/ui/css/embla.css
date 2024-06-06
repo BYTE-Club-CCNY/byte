@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    --slide-height: 39rem;
+    --slide-height: 34.5rem;
     --slide-spacing: 1rem;
     --slide-size: 100%;
 }
@@ -16,6 +16,9 @@
     display: flex;
     touch-action: pan-y pinch-zoom;
     margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide__description {
+    font-size: 16px;
 }
 .embla__slide {
     flex: 0 0 var(--slide-size);
@@ -45,7 +48,6 @@
     --thumbs-slide-height: 6rem;
     margin-top: var(--thumbs-slide-spacing);
 }
-
 
 .embla-thumbs__viewport {
     overflow: hidden;
