@@ -51,7 +51,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-                <div className="text-2xl mb-2">{slide.name}</div>
+                <div className="text-2xl ml-auto mr-auto justify-center">
+                  {slide.name}
+                </div>
                 <div>
                   <img
                     src={slide.image}
