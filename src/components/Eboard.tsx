@@ -13,7 +13,7 @@ const Eboard = () => {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="fahad faruqi photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -30,7 +30,7 @@ const Eboard = () => {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="baljinder singh hothi photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -47,7 +47,7 @@ const Eboard = () => {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="jawad kabir photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -64,7 +64,7 @@ const Eboard = () => {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="ishmam fardin photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
@@ -81,7 +81,7 @@ const Eboard = () => {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="alvee photo"
             style={{ filter: "none", mixBlendMode: "normal" }}
           />
         </div>
