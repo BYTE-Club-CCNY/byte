@@ -37,4 +37,3 @@ export default function RootLayout({
     </html>
   );
 }
-// https://byte-media.s3.us-east-2.amazonaws.com/ccny_logo.png
