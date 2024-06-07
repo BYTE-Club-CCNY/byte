@@ -38,7 +38,7 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="light:bg-[#e5e7eb] h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+      className="light:bg-[#e5e7eb] h-[60rem] md:h-[70rem]  flex items-center justify-center relative p-2 md:p-20"
       ref={containerRef} // #e5e7eb background used for main component
     >
       <div
