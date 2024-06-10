@@ -21,7 +21,7 @@ export default function Footer() {
           </button>
         </a>
         <a
-          href="https://www.linkedin.com/in/fahadfaruqi42/"
+          href="https://www.linkedin.com/company/byte-ccny/?viewAsMember=true"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,7 +38,11 @@ export default function Footer() {
             <IoLogoGithub className="h-12 w-12 mr-4 sm:mr-10" />
           </button>
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/byteccny/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>
             <IoLogoInstagram className="h-12 w-12 mr-4 sm:mr-10" />
           </button>
