@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "@/components/ui/embla-thumb";
+import { useRouter } from "next/navigation";
 
 type ProjectType = {
   name: string;
@@ -15,6 +16,7 @@ type PropType = {
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
+  const router = useRouter();
   const { slides, options } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
@@ -30,6 +32,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     },
     [emblaMainApi, emblaThumbsApi],
   );
+
+  const onImageClick = (name: string) => {
+    router.push(`/projects/name/${name}`);
+  }
 
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return;
@@ -57,6 +63,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     src={slide.image}
                     alt={slide.name}
                     className="embla__slide__image"
+                    onClick={() => onImageClick(slide.name)}
                   />
                 </div>
                 <div className="embla__slide__description">
