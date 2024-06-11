@@ -33,7 +33,7 @@ export default function Home() {
         slides={projects.map((project: any) => ({
           name: project.name,
           image: project.image,
-          description: project["short-description"],
+          description: project["short-desc"],
         }))}
         options={OPTIONS}
       />
