@@ -93,7 +93,7 @@ const Eboard = () => {
       <h1 className="text-4xl text-center my-4 font-bold">
         Meet the cabinet members
       </h1>
-      <div className="">
+      <div className="bg-black">
         <StickyScroll content={content} />
       </div>
     </div>
