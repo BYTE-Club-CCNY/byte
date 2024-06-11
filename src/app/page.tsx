@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://18.117.235.144/projects");
+        const response = await fetch("http://18.117.235.144/projects/get");
         const data = await response.json();
         setProjects(data);
       } catch (error) {
