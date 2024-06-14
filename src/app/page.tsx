@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://18.117.235.144/projects");
+        const response = await fetch("http://18.117.235.144/projects/get");
         const data = await response.json();
         setProjects(data);
       } catch (error) {
@@ -32,7 +32,7 @@ export default function Home() {
         slides={projects.map((project: any) => ({
           name: project.name,
           image: project.image,
-          description: project["short-description"],
+          description: project["short-desc"],
         }))}
         options={OPTIONS}
       />
