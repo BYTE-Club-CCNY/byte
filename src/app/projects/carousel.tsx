@@ -83,7 +83,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         className="embla__slide__image"
                       />
                       <AlertDialogContent>
-                        <BentoGridDemo />
+                        <BentoGridDemo name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
                   </AlertDialog>
