@@ -1,7 +1,7 @@
 import GoToProject from "@/components/GoToProject";
 
 const Projects = async () => {
-  const projects = await fetch("http://18.117.235.144/projects");
+  const projects = await fetch("http://18.117.235.144/projects/get");
   const projectsJson = await projects.json();
   return (
     <>
