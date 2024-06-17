@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, download the dependencies used for the components:
 ```npm install @radix-ui/react-alert-dialog```
-
+```npm i framer-motion clsx tailwind-merge @tabler/icons-react```
 Then, run the development server:
 ```bash
 npm run dev

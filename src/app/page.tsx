@@ -36,7 +36,9 @@ export default function Home() {
         }))}
         options={OPTIONS}
       />
+
       <Eboard />
     </main>
   );
 }
+// <BentoGridDemo />

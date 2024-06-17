@@ -3,7 +3,15 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "@/components/ui/embla-thumb";
 import { useRouter } from "next/navigation";
-import { AlertDialog, AlertDialogTrigger, AlertDialogCancel, AlertDialogContent, AlertDialogTitle, AlertDialogDescription } from "@/components/ui/alert-dialog"
+import {
+  AlertDialog,
+  AlertDialogTrigger,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogTitle,
+  AlertDialogDescription,
+} from "@/components/ui/alert-dialog";
+import { BentoGridDemo } from "./popup";
 
 type ProjectType = {
   name: string;
@@ -43,7 +51,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   const onImageClick = (name: string) => {
     router.push(`/projects/name/${name}`);
-  }
+  };
 
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return;
@@ -69,14 +77,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 <div>
                   <AlertDialog>
                     <AlertDialogTrigger>
-                  <img
-                    src={slide.image}
-                    alt={slide.name}
-                    className="embla__slide__image"/>
+                      <img
+                        src={slide.image}
+                        alt={slide.name}
+                        className="embla__slide__image"
+                      />
                       <AlertDialogContent>
-                        <AlertDialogTitle></AlertDialogTitle>
-                        <AlertDialogDescription>
-                        </AlertDialogDescription>
+                        <BentoGridDemo />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
                   </AlertDialog>
