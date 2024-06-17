@@ -41,8 +41,8 @@ export function BentoGridDemo({ name }) {
         <BentoGridItem
           //key={i}
           title={project.name}
-          description={project.description}
-          icon={project.image}
+          description={project["short-desc"]}
+          header={project.image}
           //className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
