@@ -2,8 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, download the dependencies used for the components:
+```npm install @radix-ui/react-alert-dialog```
 
+Then, run the development server:
 ```bash
 npm run dev
 # or
