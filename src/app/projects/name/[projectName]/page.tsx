@@ -2,7 +2,7 @@ import { useParams } from "next/navigation"
 
 const ProjectsByName = async ({params}:{params:any}) => {
     const projectName = params.projectName
-    const project = await fetch(`http://18.117.235.144/projects/name?name=${projectName}`)
+    const project = await fetch(`https://test.byteccny.com/projects/name?name=${projectName}`)
     const projectDetails = await project.json()
     const projectDetailsJson = await projectDetails[0]
     console.log(projectDetailsJson)

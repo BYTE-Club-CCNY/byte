@@ -22,7 +22,7 @@ export function BentoGridDemo({ name }) {
     const getProjects = async (name) => {
       try {
         const response = await fetch(
-          `http://18.117.235.144/projects/get?name=${name}`,
+          `https://test.byteccny.com/projects/get?name=${name}`,
         );
         const data = await response.json();
         setProject(data);
