@@ -40,9 +40,14 @@ const config = {
       },
       spacing: {
         '25': '1.5625rem',
+        '40': '20rem',
+        '50': '22rem',
       },
       translate: {
-        '160': '52rem',
+        '50': '22rem',
+      },
+      margin: {
+        '-60': '-15rem',
       },
     },
   },
