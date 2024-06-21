@@ -27,7 +27,7 @@ export function PopupGrid({ name }) {
   }, [name]);
 
   return (
-      <div className="mt-10 mb-12 overflow-y-hidden relative">
+      <div className="mt-10 mb-12 overflow-hidden relative">
         {project.map((project, index) => (
             <div key={index} className="project-card flex items-center space-x-4">
               {project.image && (<img className="mt-16 z-10 max-h-55 max-w-md object-cover rounded-md" src={project.image} alt={project.name}/>)}
