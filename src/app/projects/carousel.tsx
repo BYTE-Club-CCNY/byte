@@ -11,7 +11,7 @@ import {
   AlertDialogTitle,
   AlertDialogDescription,
 } from "@/components/ui/alert-dialog";
-import { BentoGridDemo } from "./popup";
+import { PopupGrid } from "./popup";
 
 type ProjectType = {
   name: string;
@@ -83,7 +83,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         className="embla__slide__image"
                       />
                       <AlertDialogContent>
-                        <BentoGridDemo name={slide.name} />
+                        <PopupGrid name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
                   </AlertDialog>

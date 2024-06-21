@@ -38,6 +38,12 @@ const config = {
       maxHeight: {
         superlg: "45rem",
       },
+      spacing: {
+        '25': '1.5625rem',
+      },
+      translate: {
+        '160': '52rem',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
