@@ -82,7 +82,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         alt={slide.name}
                         className="embla__slide__image"
                       />
-                      <AlertDialogContent>
+                      <AlertDialogContent className="w-4/6 h-3/4">
                         <PopupGrid name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
