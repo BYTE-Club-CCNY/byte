@@ -9,13 +9,19 @@
 }
 
 .aspect-ratio {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
+    width: 600px; /* Fixed width for the container */
+    max-height: 400px; /* Maximum height for the container */
+    overflow: hidden; /* Hides any overflow */
+    border-radius: 0.375rem; /* To maintain the rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aspect-ratio img {
-    object-fit: cover;
+    max-width: 100%; /* Limits the width to the container's width */
+    height: auto; /* Maintain the image aspect ratio */
+    object-fit: cover; /* Maintains aspect ratio and covers the container */
     border-radius: 0.375rem;
 }
 
