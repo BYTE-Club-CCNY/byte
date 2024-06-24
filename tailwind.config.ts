@@ -33,21 +33,21 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       maxWidth: {
-        superlg: "85rem",
+        superlg: "80rem",
       },
       maxHeight: {
-        superlg: "45rem",
+        superlg: "65rem",
       },
       spacing: {
-        '25': '1.5625rem',
-        '40': '20rem',
-        '50': '22rem',
+        "25": "1.5625rem",
+        "40": "20rem",
+        "50": "22rem",
       },
       translate: {
-        '50': '22rem',
+        "50": "22rem",
       },
       margin: {
-        '-60': '-15rem',
+        "-60": "-15rem",
       },
     },
   },
