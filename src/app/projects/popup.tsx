@@ -38,7 +38,7 @@ export function PopupGrid({ name }) {
                   <div className="text-4xl font-sans font-semibold text-black">
                     {project.name}
                   </div>
-                  <div className="text-sm text-black text-ellipsis whitespace-normal mb-4">
+                  <div className="text-base text-black text-ellipsis whitespace-normal mb-4">
                     {project["long-desc"]}
                   </div>
                   <div className="flex flex-row space-x-4">
