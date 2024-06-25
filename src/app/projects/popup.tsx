@@ -38,20 +38,24 @@ export function PopupGrid({ name }) {
                   <div className="text-4xl font-sans font-semibold text-black">
                     {project.name}
                   </div>
-                  <div className="text-sm text-black text-ellipsis whitespace-normal">
+                  <div className="text-sm text-black text-ellipsis whitespace-normal mb-4">
                     {project["long-desc"]}
                   </div>
-                  <div className="text-sm text-black">
-                    <strong>Cohort:</strong> {project.cohort}
+                  <div>
+                  <div className="flex flex-row space-x-4">
+                    <div className="border-dark rounded-lg p-4">
+                      <strong>Cohort:</strong> {project.cohort}
+                    </div>
+                    <div className="border-dark rounded-lg p-4 bg-white shadow">
+                      <strong>Team:</strong> {project.team.join(", ")}
+                    </div>
+                    <div className="border-dark rounded-lg p-4 bg-white shadow">
+                      <strong>Tech-Stack:</strong> {project["tech-stack"].join(", ")}
+                    </div>
+                    <div className="border-dark rounded-lg p-4 bg-white shadow">
+                      <strong>Topic:</strong> {project.topic.join(", ")}
+                    </div>
                   </div>
-                  <div className="text-sm text-black">
-                    <strong>Team:</strong> {project.team.join(", ")}
-                  </div>
-                  <div className="text-sm text-black">
-                    <strong>Tech-Stack:</strong> {project["tech-stack"].join(", ")}
-                  </div>
-                  <div className="text-sm text-black">
-                    <strong>Topic:</strong> {project.topic.join(", ")}
                   </div>
                 </div>
                 <div className="max-h-55 max-w-md object-cover rounded-md">

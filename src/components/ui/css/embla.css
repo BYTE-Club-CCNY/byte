@@ -58,11 +58,12 @@
 
 .embla__slide__name {
     margin-top: 5px;
-    font-size: 1.25rem;
+    font-size: 1.80rem;
     line-height: 1.75rem;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .embla__slide__image {
