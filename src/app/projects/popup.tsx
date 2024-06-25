@@ -50,6 +50,18 @@ export function PopupGrid({ name }) {
               <div className="text-sm text-black text-ellipsis whitespace-normal">
                 {project["long-desc"]}
               </div>
+              <div className="text-sm text-black">
+                <strong>Cohort:</strong> {project.cohort}
+              </div>
+              <div className="text-sm text-black">
+                <strong>Team:</strong> {project.team.join(", ")}
+              </div>
+              <div className="text-sm text-black">
+                <strong>Tech-Stack:</strong> {project["tech-stack"].join(", ")}
+              </div>
+              <div className="text-sm text-black">
+                <strong>Topic:</strong> {project.topic.join(", ")}
+              </div>
             </div>
           </div>
         ))}
