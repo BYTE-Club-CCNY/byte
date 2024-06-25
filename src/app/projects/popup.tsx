@@ -1,12 +1,7 @@
-import { cn } from "@/utils/cn";
 import React, { useState, useEffect } from "react";
 import { IoLogoGithub } from "react-icons/io5";
+import { Divider } from "@nextui-org/divider";
 
-// type ProjectParams = {
-//   name: string;
-// };
-
-// @ts-ignore
 export function PopupGrid({ name }) {
     const [project, setProject] = useState<any[]>([]);
 
@@ -42,17 +37,20 @@ export function PopupGrid({ name }) {
                             <div className="text-base text-black text-ellipsis whitespace-normal mb-4">
                                 {project["long-desc"]}
                             </div>
-                            <div className="flex flex-row space-x-4">
-                                <div className="border-dark rounded-lg p-4 bg-white shadow">
+                            <Divider orientation='horizontal' className="my-1 bg-black"/>
+                            <div className="flex flex-row space-x-4 items-center">
+                                <div className="rounded-lg p-4 bg-white shadow">
                                     <strong>Cohort:</strong> {project.cohort}
                                 </div>
-                                <div className="border-dark rounded-lg p-4 bg-white shadow">
+                                <Divider orientation="vertical" className="mx-2 h-12" />
+                                <div className="rounded-lg p-4 bg-white shadow">
                                     <strong>Team:</strong> {project.team.join(", ")}
                                 </div>
-                                <div className="border-dark rounded-lg p-4 bg-white shadow">
+
+                                <div className="rounded-lg p-4 bg-white shadow">
                                     <strong>Tech-Stack:</strong> {project["tech-stack"].join(", ")}
                                 </div>
-                                <div className="border-dark rounded-lg p-4 bg-white shadow">
+                                <div className="rounded-lg p-4 bg-white shadow">
                                     <strong>Topic:</strong> {project.topic.join(", ")}
                                 </div>
                             </div>

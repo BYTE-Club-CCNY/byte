@@ -48,3 +48,15 @@ html {
 .border-dark {
     border: 1px solid rgb(2 6 23);
 }
+
+.divider-dark {
+    color: rgb(2, 6, 23);
+    height: 100%;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: black;
+    height: 100%;
+    margin: 0 8px;
+}
