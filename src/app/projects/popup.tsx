@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoLogoGithub } from "react-icons/io5";
 import { Divider } from "@nextui-org/divider";
 
-export function PopupGrid({ name }) {
+export function PopupGrid({ name }: PopupGridProps) {
     const [project, setProject] = useState<any[]>([]);
 
     useEffect(() => {
