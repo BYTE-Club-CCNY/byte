@@ -41,9 +41,8 @@ export function PopupGrid({ name }) {
                   <div className="text-sm text-black text-ellipsis whitespace-normal mb-4">
                     {project["long-desc"]}
                   </div>
-                  <div>
                   <div className="flex flex-row space-x-4">
-                    <div className="border-dark rounded-lg p-4">
+                    <div className="border-dark rounded-lg p-4 bg-white shadow">
                       <strong>Cohort:</strong> {project.cohort}
                     </div>
                     <div className="border-dark rounded-lg p-4 bg-white shadow">
@@ -56,17 +55,16 @@ export function PopupGrid({ name }) {
                       <strong>Topic:</strong> {project.topic.join(", ")}
                     </div>
                   </div>
-                  </div>
                 </div>
                 <div className="max-h-55 max-w-md object-cover rounded-md">
                   {project.image && (
-                      <div className="aspect-ratio">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="aspect-ratio">
                         <img
                             className="rounded-md aspect-ratio"
                             src={project.image}
                             alt={project.name}
                         />
-                      </div>
+                      </a>
                   )}
                 </div>
               </div>
