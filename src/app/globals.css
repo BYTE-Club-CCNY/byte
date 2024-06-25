@@ -60,3 +60,7 @@ html {
     height: 100%;
     margin: 0 8px;
 }
+
+.topic-item {
+    margin-right: 15px;
+}
