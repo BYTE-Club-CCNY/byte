@@ -5,7 +5,6 @@ import { IoClose } from "react-icons/io5";
 
 interface PopupGridProps {
   name: string;
-  onClose: () => void; // Add this line
 }
 
 interface Project {
@@ -19,7 +18,7 @@ interface Project {
   image?: string;
 }
 
-export function PopupGrid({ name, onClose }: PopupGridProps) {
+export function PopupGrid({ name }: PopupGridProps) {
   // Update this line
   const [project, setProject] = useState<Project[]>([]);
 
@@ -44,7 +43,7 @@ export function PopupGrid({ name, onClose }: PopupGridProps) {
   return (
     <>
       <div className="mt-1 mb-1 overflow-hidden relative">
-        <button onClick={onClose} className="absolute -top-2 -right-2 p-1">
+        <button className="absolute -top-2 -right-2 p-1">
           <IoClose size={24} />
         </button>
         {project.map((project, index) => (
