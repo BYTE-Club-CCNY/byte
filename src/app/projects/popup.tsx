@@ -32,10 +32,12 @@ export function PopupGrid({ name }: PopupGridProps) {
         console.error("Error fetching projects:", error);
       }
     };
+    console.log(project)
     if (name) {
       getProjects(name);
     }
   }, [name]);
+
 
   return (
     <>
@@ -43,9 +45,9 @@ export function PopupGrid({ name }: PopupGridProps) {
         {project.map((project, index) => (
           <div
             key={index}
-            className="pl-4 project-card flex flex-row justify-center items-center space-x-4 mb-8"
+            className="pl-2 project-card flex flex-row items-center justify-evenly mb-8 "
           >
-            <div className="flex flex-col items-center justify-center flex-1">
+            <div className="flex flex-col items-center justify-center flex-1 ">
               <div className="text-4xl font-sans font-semibold text-black mb-3">
                 {project.name}
               </div>
@@ -54,21 +56,33 @@ export function PopupGrid({ name }: PopupGridProps) {
               </div>
               <Divider orientation="horizontal" className="my-1 bg-black" />
               <div className="flex flex-row w-full">
-                <div className="flex-2 p-4 bg-white shadow rounded-lg">
+              <div className="flex-2 flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg space-y-2 w-1/4 h-36">
                   <strong>Cohort:</strong>
-                  <p>{project.cohort}</p>
+                  <button className="text-black border-2 border-gray-500 p-1">{project.cohort}</button>
                 </div>
-                <div className="flex-2 p-4 bg-white shadow rounded-lg">
+                <div className="flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg w-1/4 h-36">
                   <strong>Team:</strong>
-                  <p>{project.team.join(" ")}</p>
+                  <div className="flex flex-wrap items-center justify-center overflow-scroll">
+                  {project.team.map((member, index) => (
+                    <button className="text-black border-2 m-auto border-gray-500 mx-1 mb-2 p-1"key={index}>{member}</button>
+                  ))}
+                  </div>
                 </div>
-                <div className="flex-2 p-4 bg-white shadow rounded-lg">
+                <div className="flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg w-1/4 h-36">
                   <strong>Tech-Stack:</strong>
-                  <p>{project["tech-stack"].join("  ")}</p>
+                  <div className="flex flex-wrap items-center justify-center overflow-scroll">
+                  {project["tech-stack"].map((member, index) => (
+                    <button className="text-black border-2 border-gray-500 m-auto mb-2 p-1"key={index}>{member}</button>
+                  ))}
+                  </div>
                 </div>
-                <div className="flex-2 p-4 bg-white shadow rounded-lg">
+                <div className="flex-2 flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg space-y-2 h-36 w-1/4">
                   <strong>Topic:</strong>
-                  <p>{project.topic.join(" ")}</p>
+                  <div className="flex flex-wrap items-center justify-center overflow-scroll">
+                  {project.topic.map((member, index) => (
+                    <button className="text-black border-2 border-gray-500 m-auto mx-2 my-2 p-1"key={index}>{member}</button>
+                  ))}
+                  </div>
                 </div>
               </div>
               <div className="mt-4">
