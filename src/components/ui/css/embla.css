@@ -2,8 +2,8 @@
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    --slide-height: 34.5rem;
+    margin-bottom: 10px;
+    --slide-height: 35rem;
     --slide-spacing: 1rem;
     --slide-size: 100%;
 }
@@ -24,7 +24,7 @@
     display: flex;
     font-size: 15px;
     line-height: 20px;
-    margin: 10px 0px;
+    margin: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -58,11 +58,12 @@
 
 .embla__slide__name {
     margin-top: 5px;
-    font-size: 1.25rem;
+    font-size: 1.80rem;
     line-height: 1.75rem;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .embla__slide__image {

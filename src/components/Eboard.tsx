@@ -9,7 +9,7 @@ const Eboard = () => {
       content: (
         <div className="h-full w-full flex items-center justify-center">
           <img
-            src="https://d1tzawfcgeew72.cloudfront.net/fahad.jpeg"
+            src="https://d1tzawfcgeew72.cloudfront.net/fahad.png"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -39,7 +39,7 @@ const Eboard = () => {
     {
       title: "Jawad Kabir",
       description:
-        "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a conductive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential.",
+        "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a productive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential.",
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <img
@@ -93,7 +93,7 @@ const Eboard = () => {
       <h1 className="text-4xl text-center my-4 font-bold">
         Meet the cabinet members
       </h1>
-      <div className="">
+      <div className="bg-black">
         <StickyScroll content={content} />
       </div>
     </div>

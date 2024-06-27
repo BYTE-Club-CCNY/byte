@@ -2,6 +2,16 @@ import React, { useState, useEffect, useCallback } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "@/components/ui/embla-thumb";
+import { useRouter } from "next/navigation";
+import {
+  AlertDialog,
+  AlertDialogTrigger,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogTitle,
+  AlertDialogDescription,
+} from "@/components/ui/alert-dialog";
+import { PopupGrid } from "./popup";
 
 type ProjectType = {
   name: string;
@@ -13,8 +23,16 @@ type PropType = {
   slides: ProjectType[];
   options?: EmblaOptionsType;
 };
-
+// READ HERE:
+// At line 70ish, you will put the content you want to show on pop up. The title and description are already
+// labeled for you already. There are other usages you can import in the original documentation for the component
+// so if you need those you can look. I resized the pop up for you, all we need to do left is to actually retrieve
+// the content to display on the pop up
+// Here's documentation for reference of the alert popup: https://ui.shadcn.com/docs/components/alert-dialog
+// Note if you want to change anything around with the actual pop up design itself, you will have to go to
+// components/ui/alert-dialog.tsx
 const EmblaCarousel: React.FC<PropType> = (props) => {
+  const router = useRouter();
   const { slides, options } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
@@ -30,6 +48,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     },
     [emblaMainApi, emblaThumbsApi],
   );
+
+  const onImageClick = (name: string) => {
+    router.push(`/projects/name/${name}`);
+  };
 
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return;
@@ -53,11 +75,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <div className="embla__slide__number">
                 <div className="embla__slide__name">{slide.name}</div>
                 <div>
-                  <img
-                    src={slide.image}
-                    alt={slide.name}
-                    className="embla__slide__image"
-                  />
+                  <AlertDialog>
+                    <AlertDialogTrigger>
+                      <img
+                        src={slide.image}
+                        alt={slide.name}
+                        className="embla__slide__image"
+                      />
+                      <AlertDialogContent className="w-11/12 h-7/8">
+                        <PopupGrid name={slide.name}/>
+                      </AlertDialogContent>
+                    </AlertDialogTrigger>
+                  </AlertDialog>
                 </div>
                 <div className="embla__slide__description">
                   {slide.description}

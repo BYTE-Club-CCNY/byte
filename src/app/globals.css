@@ -8,6 +8,22 @@
     --background-end-rgb: 255, 255, 255;
 }
 
+.aspect-ratio {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aspect-ratio img {
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
@@ -27,4 +43,24 @@ body {
 }
 html {
     scroll-behavior: smooth;
+}
+
+.border-dark {
+    border: 1px solid rgb(2 6 23);
+}
+
+.divider-dark {
+    color: rgb(2, 6, 23);
+    height: 100%;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: black;
+    height: 100%;
+    margin: 0 8px;
+}
+
+.topic-item {
+    margin-right: 15px;
 }

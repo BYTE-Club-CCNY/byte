@@ -9,14 +9,15 @@ import "@/components/ui/css/sandbox.css";
 const OPTIONS: EmblaOptionsType = {};
 
 export default function Home() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://18.117.235.144/projects");
+        const response = await fetch("https://test.byteccny.com/projects/get");
         const data = await response.json();
         setProjects(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -32,11 +33,13 @@ export default function Home() {
         slides={projects.map((project: any) => ({
           name: project.name,
           image: project.image,
-          description: project["short-description"],
+          description: project["short-desc"],
         }))}
         options={OPTIONS}
       />
+
       <Eboard />
     </main>
   );
 }
+// <BentoGridDemo />
