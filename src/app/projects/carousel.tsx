@@ -12,6 +12,11 @@ import {
   AlertDialogDescription,
 } from "@/components/ui/alert-dialog";
 import { PopupGrid } from "./popup";
+import {
+  PrevButton,
+  NextButton,
+  usePrevNextButtons,
+} from "@/components/ui/EmblaArrowButtons";
 
 type ProjectType = {
   name: string;
@@ -36,10 +41,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: "trimSnaps",
     dragFree: true,
   });
+
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   const onThumbClick = useCallback(
     (index: number) => {
@@ -83,7 +96,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         className="embla__slide__image"
                       />
                       <AlertDialogContent className="w-11/12 h-7/8">
-                        <PopupGrid name={slide.name}/>
+                        <PopupGrid name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
                   </AlertDialog>
@@ -96,20 +109,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
-      <div className="embla-thumbs">
-        <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container">
-            {slides.map((slide, index) => (
-              <Thumb
-                key={index}
-                onClick={() => onThumbClick(index)}
-                selected={index === selectedIndex}
-                index={index}
-                label={slide.name} // updated to show name
-              />
-            ))}
-          </div>
+      <div className="embla__controls">
+        <div className="embla__buttons">
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
     </div>
