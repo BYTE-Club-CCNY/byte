@@ -6,10 +6,7 @@ import { useRouter } from "next/navigation";
 import {
   AlertDialog,
   AlertDialogTrigger,
-  AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogTitle,
-  AlertDialogDescription,
 } from "@/components/ui/alert-dialog";
 import { PopupGrid } from "./popup";
 import {
@@ -41,7 +38,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: "trimSnaps",
     dragFree: true,
@@ -52,7 +48,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     nextBtnDisabled,
     onPrevButtonClick,
     onNextButtonClick,
-  } = usePrevNextButtons(emblaApi);
+  } = usePrevNextButtons(emblaMainApi);
 
   const onThumbClick = useCallback(
     (index: number) => {
@@ -80,6 +76,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaMainApi, onSelect]);
 
   return (
+      <section className="embla">
     <div className="embla" id="projects">
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
@@ -95,7 +92,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         alt={slide.name}
                         className="embla__slide__image"
                       />
-                      <AlertDialogContent className="w-11/12 h-7/8">
+                      <AlertDialogContent className ="w-11/12 h-7/8">
                         <PopupGrid name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
@@ -116,6 +113,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
     </div>
+      </section>
   );
 };
 
