@@ -61,17 +61,17 @@ export function PopupGrid({ name }: PopupGridProps) {
               <Divider orientation="horizontal" className="my-1 bg-black" />
               <div className="flex flex-row w-full">
                 <div className="flex-2 flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg space-y-2 w-1/4 h-36">
-                  <strong>Cohort</strong>
-                  <button className="text-black border-2 border-gray-500 p-1">
+                  <strong className="self-center">Cohort</strong>
+                  <button className="mx-auto text-black border-2 border-gray-500 p-1">
                     {project.cohort}
                   </button>
                 </div>
                 <div className="flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg w-1/4 h-36">
-                  <strong>Team</strong>
+                  <strong className="self-center">Team</strong>
                   <div className="flex flex-wrap items-center justify-center overflow-scroll">
                     {project.team.map((member, index) => (
                       <button
-                        className="text-black border-2 m-auto border-gray-500 mx-1 mb-2 p-1"
+                        className="text-black border-2 border-gray-500 mx-1 mb-2 p-1"
                         key={index}
                       >
                         {member}
@@ -80,11 +80,11 @@ export function PopupGrid({ name }: PopupGridProps) {
                   </div>
                 </div>
                 <div className="flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg w-1/4 h-36">
-                  <strong>Tech-Stack</strong>
+                  <strong className="self-center">Tech-Stack</strong>
                   <div className="flex flex-wrap items-center justify-center overflow-scroll">
                     {project["tech-stack"].map((member, index) => (
                       <button
-                        className="text-black border-2 border-gray-500 m-auto mb-2 p-1"
+                        className="text-black border-2 border-gray-500 mx-1 mb-2 p-1"
                         key={index}
                       >
                         {member}
@@ -93,7 +93,7 @@ export function PopupGrid({ name }: PopupGridProps) {
                   </div>
                 </div>
                 <div className="flex-2 flex flex-col p-4 items-center text-black bg-white shadow mx-2 rounded-lg space-y-2 h-36 w-1/4">
-                  <strong>Topic</strong>
+                  <strong className="self-center">Topic</strong>
                   <div className="flex flex-wrap items-center justify-center overflow-scroll">
                     {project.topic.map((member, index) => (
                       <button
