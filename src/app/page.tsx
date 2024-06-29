@@ -9,7 +9,7 @@ import "@/components/ui/css/sandbox.css";
 const OPTIONS: EmblaOptionsType = {};
 
 export default function Home() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -17,6 +17,7 @@ export default function Home() {
         const response = await fetch("https://test.byteccny.com/projects/get");
         const data = await response.json();
         setProjects(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -36,7 +37,9 @@ export default function Home() {
         }))}
         options={OPTIONS}
       />
+
       <Eboard />
     </main>
   );
 }
+// <BentoGridDemo />
