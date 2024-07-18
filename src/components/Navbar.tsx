@@ -23,7 +23,7 @@ export default function Navbar() {
     },
     {
       name: "Contact Us",
-      link: "#contact",
+      link: "#footer",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
