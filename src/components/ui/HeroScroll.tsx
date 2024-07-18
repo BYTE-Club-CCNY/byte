@@ -23,9 +23,7 @@ export function HeroScroll() {
           alt="hero image"
           width={1000}
           height={1400}
-          //width="100%"
-          //height="auto"
-          objectFit="cover"
+          priority={true}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />
