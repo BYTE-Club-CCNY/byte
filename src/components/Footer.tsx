@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-end mt-1.5 sm:flex-row">
+    <footer id="footer" className="flex justify-end mt-1.5 sm:flex-row">
       <div>
         <a
           href="https://discord.gg/k8dd4yMTRx"
