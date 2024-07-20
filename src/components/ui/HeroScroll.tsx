@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export function HeroScroll() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="relative flex flex-col overflow-hidden">
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="p-16 pt-0 mb-8 text-4xl font-sans font-semibold text-black dark:text-white">
+            <h1 className="relative p-16 pt-0 mb-8 text-4xl font-sans font-semibold white:text-black dark:text-white">
               Join Us And Build Your <br />
-              <span className="text-4xl md:text-[6rem] font-sans font-bold mt-1 leading-none py-5">
+              <span className="relative text-4xl md:text-[6rem] font-sans font-bold mt-1 leading-none py-5">
                 Technical Experience
               </span>
             </h1>
@@ -23,10 +23,8 @@ export function HeroScroll() {
           alt="hero image"
           width={1000}
           height={1400}
-          //width="100%"
-          //height="auto"
-          objectFit="cover"
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          priority={true}
+          className="relative mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />
       </ContainerScroll>

@@ -6,12 +6,14 @@ import { useRouter } from "next/navigation";
 import {
   AlertDialog,
   AlertDialogTrigger,
-  AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogTitle,
-  AlertDialogDescription,
 } from "@/components/ui/alert-dialog";
 import { PopupGrid } from "./popup";
+import {
+  PrevButton,
+  NextButton,
+  usePrevNextButtons,
+} from "@/components/ui/EmblaArrowButtons";
 
 type ProjectType = {
   name: string;
@@ -41,6 +43,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     dragFree: true,
   });
 
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaMainApi);
+
   const onThumbClick = useCallback(
     (index: number) => {
       if (!emblaMainApi || !emblaThumbsApi) return;
@@ -67,6 +76,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaMainApi, onSelect]);
 
   return (
+      <section className="embla">
     <div className="embla" id="projects">
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
@@ -82,8 +92,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         alt={slide.name}
                         className="embla__slide__image"
                       />
-                      <AlertDialogContent className="w-11/12 h-7/8">
-                        <PopupGrid name={slide.name}/>
+                      <AlertDialogContent className ="w-11/12 h-7/8">
+                        <PopupGrid name={slide.name} />
                       </AlertDialogContent>
                     </AlertDialogTrigger>
                   </AlertDialog>
@@ -96,23 +106,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
-      <div className="embla-thumbs">
-        <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container">
-            {slides.map((slide, index) => (
-              <Thumb
-                key={index}
-                onClick={() => onThumbClick(index)}
-                selected={index === selectedIndex}
-                index={index}
-                label={slide.name} // updated to show name
-              />
-            ))}
-          </div>
+      <div className="embla__controls">
+        <div className="embla__buttons">
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
     </div>
+      </section>
   );
 };
 
