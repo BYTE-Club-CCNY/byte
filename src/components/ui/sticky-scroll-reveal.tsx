@@ -69,17 +69,19 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = ["var(--slate-900)", "var(--black)"];
+  // Use specific RGB values instead of CSS variables for animatable colors
+  const backgroundColors = ["rgb(15, 23, 42)", "rgb(0, 0, 0)"];
+
   return (
     <motion.div
       animate={{
-        backgroundColor: isDark ? backgroundColors[2] : backgroundColors[1],
+        backgroundColor: isDark ? backgroundColors[1] : backgroundColors[0],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative lg:space-x-10 rounded-md -space-x-2 lg:p-10"
+      className="relative h-[30rem] overflow-y-auto flex justify-center lg:space-x-10 rounded-md -space-x-2 lg:p-10"
       // -space-x-2 & lg:p-10 help image fit on mobile
       ref={ref}
     >
-      <div className="div relative flex items-start lg:px-0 px-1.5">
+      <div className="relative flex items-start lg:px-0 px-1.5">
         <div className="max-w-screen-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
@@ -112,7 +114,7 @@ export const StickyScroll = ({
       </div>
       <motion.div
         animate={{
-          background: "var(--black)",
+          backgroundColor: "rgb(0, 0, 0)",
         }}
         className={cn(
           "lg:block h-60 w-80 lg:flex-row lg:rounded-md bg-white sticky top-20 justify-center overflow-hidden rounded-lg",

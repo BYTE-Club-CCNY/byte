@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import { HeroScroll } from "@/components/ui/HeroScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,10 +29,14 @@ export default function RootLayout({
           rel="icon"
           href="https://byte-media.s3.us-east-2.amazonaws.com/ccny_logo.png"
         />
+        <meta
+          name="description"
+          content="Build Your Technical Experience at BYTE with other software engineers."
+        />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <main className="flex-grow">{children}</main>
         <Navbar />
+        <main className="relative flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
