@@ -30,7 +30,7 @@ export default function Navbar() {
       name: "Apply Now",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSfK8xf-lyFWMm4BcrrwNYlRb0mCMfye_oKbfJgYZVkvQY5SJg/viewform",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    }
+    },
   ];
   return (
     <div className="relative w-full">
