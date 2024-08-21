@@ -88,6 +88,24 @@ const Eboard = () => {
         </div>
       ),
     },
+        {
+      title: "Thanjila ",
+      description:
+        "Hi guys! My name is Thanjila and I am BYTE's graphic designer. As part of our E-Board, I work to elevate our club's visual branding throughout our social media and communications. Although I'm an EDM major, I have experience within the tech world as part of BYTE's first cohort and other various extracurriculars. You may see my work through our icons, posts, and slides. If you want to chat about design, hit me up!",
+      content: (
+        <div className="h-full w-full  flex items-center justify-center">
+          <Image
+            src="https://d1tzawfcgeew72.cloudfront.net/thanjila.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="alvee photo"
+            style={{ filter: "none", mixBlendMode: "normal" }}
+          />
+        </div>
+      ),
+    },
+
   ];
   return (
     <div id="eboard">
