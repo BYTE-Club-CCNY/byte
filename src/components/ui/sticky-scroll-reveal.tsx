@@ -54,20 +54,20 @@ export const StickyScroll = ({
     }
   }, []);
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = content.map((_, index) => index / cardLength);
-    const closestBreakpointIndex = cardsBreakpoints.reduce(
-      (acc, breakpoint, index) => {
-        const distance = Math.abs(latest - breakpoint);
-        if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
-          return index;
-        }
-        return acc;
-      },
-      0,
-    );
-    setActiveCard(closestBreakpointIndex);
-  });
+    useMotionValueEvent(scrollYProgress, "change", (latest) => {
+      const cardsBreakpoints = content.map((_, index) => ((index - .31) / (cardLength))); // note from Jawad: calculations might be off. may have issues down the line
+      const closestBreakpointIndex = cardsBreakpoints.reduce(
+        (acc, breakpoint, index) => {
+          const distance = Math.abs((latest) - (breakpoint));
+          if (distance < Math.abs((latest) - (cardsBreakpoints[acc]))) {
+            return index;
+          }
+          return acc;
+        },
+        0
+      );
+      setActiveCard(closestBreakpointIndex);
+    });
 
   // Use specific RGB values instead of CSS variables for animatable colors
   const backgroundColors = ["rgb(15, 23, 42)", "rgb(0, 0, 0)"];
