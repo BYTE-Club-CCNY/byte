@@ -61,6 +61,8 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
           <Link
             key={`link=${idx}`}
             href={navItem.link}
+            target={navItem.name === "Apply Now" ? "_blank" : undefined} //conditional to handle if name== Apply Now to open new tab
+            rel={navItem.name === "Apply Now" ? "noopener noreferrer" : undefined}
             className={cn(
               "relative text-black flex items-center justify-center py-2 px-4 bg-white dark:bg-black rounded-full",
             )}
