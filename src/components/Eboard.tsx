@@ -3,11 +3,19 @@ import Image from "next/image";
 
 const Eboard = () => {
   const content = [
+
+
     {
       title: "Fahad Faruqi",
-      description:
-        "My dedication to this club comes from my passion for community & project building. Hackathons have shown me a whole new side of software engineering communities that I wish to replicate here in CCNY. I believe that by building projects with likeminded driven SWEs, we can create a community that fosters growth and learning. I use Linux btw 🤓",
-      content: (
+      description: //become div NOW!!!🌩️🌩️
+      <> 
+        "My dedication to this club comes from my passion for community & project building. Hackathons have shown me a whole new side of software engineering communities that I wish to replicate here in CCNY. I believe that by building projects with likeminded driven SWEs, we can create a community that fosters growth and learning. I use Linux btw 🤓"
+        <br></br>
+        <a href="https://www.linkedin.com/in/fahadfaruqi42/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+            Follow Fahad on LinkedIn!
+          </a>
+      </>,
+        content: (
         <div className="h-full w-full flex items-center justify-center">
           <Image
             src="https://d1tzawfcgeew72.cloudfront.net/fahad.png"
@@ -20,27 +28,18 @@ const Eboard = () => {
         </div>
       ),
     },
-    {
-      title: "Baljinder Singh Hothi",
-      description:
-        "Many of you may know me, but my name is Baljinder. I'm a CS major passionate about ML and AI. I am dedicated to BYTE due to my own life experiences; When I was a freshman and sophomore, I lacked the necessary resources needed to build my own projects. My hope with BYTE is to help CCNY students who were in similar spots as myself grow their skills, become ready for real-world applications, and ideally land a MAANG internship. My hobbies include reading, gaming, and playing sports (basketball, volleyball, and rock climbing). BTW I'm the cool Eboard member 🦅",
-      content: (
-        <div className="h-full w-full flex items-center justify-center">
-          <Image
-            src="https://d1tzawfcgeew72.cloudfront.net/eboard_jinder.jpg"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="baljinder singh hothi photo"
-            style={{ filter: "none", mixBlendMode: "normal" }}
-          />
-        </div>
-      ),
-    },
+
+
+
     {
       title: "Jawad Kabir",
-      description:
-        "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a productive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential.",
+      description:<>
+        "Hey folks! It's Jawad here. I handle moderation and internal affairs at BYTE. Some of my hobbies include meme-making, video games, Leetcode🤓, and card games. My goal for the club is to foster a productive simulated environment, allowing members to cooperate and encourage one other to improve. Ultimately the college experience is what you make out of it, and so I hope that through BYTE I can help others reach their fullest potential."
+        <br></br>
+        <a href="https://www.linkedin.com/in/jawadkabir9675/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+            Follow Jawad on Linkedin!
+          </a>
+      </>,
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <Image
@@ -54,10 +53,43 @@ const Eboard = () => {
         </div>
       ),
     },
+
+
+
+    {
+      title: "Baljinder Singh Hothi",
+      description:<>
+        "Many of you may know me, but my name is Baljinder. I'm a CS major passionate about ML and AI. I am dedicated to BYTE due to my own life experiences; When I was a freshman and sophomore, I lacked the necessary resources needed to build my own projects. My hope with BYTE is to help CCNY students who were in similar spots as myself grow their skills, become ready for real-world applications, and ideally land a MAANG internship. My hobbies include reading, gaming, and playing sports (basketball, volleyball, and rock climbing). BTW I'm the cool Eboard member 🦅"
+        <br></br>
+        <a href="https://www.linkedin.com/in/baljinder-hothi/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+            Follow Baljinder on LinkedIn!
+          </a>
+      </>,
+      content: (
+        <div className="h-full w-full flex items-center justify-center">
+          <Image
+            src="https://d1tzawfcgeew72.cloudfront.net/eboard_jinder.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="baljinder singh hothi photo"
+            style={{ filter: "none", mixBlendMode: "normal" }}
+          />
+        </div>
+      ),
+    },
+
+
+
     {
       title: "Ishmam Fardin",
-      description:
-        "My motivation for founding this club stems from my fascination with the driven, competitive, and social nature of hackathons, alongside my desire to find a community embodying these qualities at City College. At our school, I noticed a disconnect among Computer Science students and a lack of facilities providing hands-on experience with guidance. Through BYTE, I aim to mentor members with my knowledge and advice, guide them in building their projects, and create an environment for growth and success.",
+      description:<>
+        "My motivation for founding this club stems from my fascination with the driven, competitive, and social nature of hackathons, alongside my desire to find a community embodying these qualities at City College. At our school, I noticed a disconnect among Computer Science students and a lack of facilities providing hands-on experience with guidance. Through BYTE, I aim to mentor members with my knowledge and advice, guide them in building their projects, and create an environment for growth and success."
+      <br></br>
+      <a href="https://www.linkedin.com/in/ishmam-fardin/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+           Follow Ishmam on LinkedIn!
+      </a>    
+      </>,
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <Image
@@ -71,10 +103,18 @@ const Eboard = () => {
         </div>
       ),
     },
+
+
+
     {
       title: "Alvee",
-      description:
-        "Hello, My name is Muhammad Khan better known by my peers as Alvee. I am the newest member of the E-board and BYTE's very own community and social media manager. My aim is to foster a good, healthy and cooperative environment for our talented club members and ensure your experience here is fantastic. Should you have any queries and questions about how the club operates and the people you will work with, I am your man.",
+      description:<> 
+        "Hello, My name is Muhammad Khan better known by my peers as Alvee. I am the newest member of the E-board and BYTE's very own community and social media manager. My aim is to foster a good, healthy and cooperative environment for our talented club members and ensure your experience here is fantastic. Should you have any queries and questions about how the club operates and the people you will work with, I am your man."
+      <br></br>
+      <a href="https://www.linkedin.com/in/mkhan2002/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+           Follow Alvee on LinkedIn!
+      </a>
+      </>,
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <Image
@@ -88,10 +128,18 @@ const Eboard = () => {
         </div>
       ),
     },
-        {
+
+
+
+    {
       title: "Thanjila ",
-      description:
-        "Hi guys! My name is Thanjila and I am BYTE's graphic designer. As part of our E-Board, I work to elevate our club's visual branding throughout our social media and communications. Although I'm an EDM major, I have experience within the tech world as part of BYTE's first cohort and other various extracurriculars. You may see my work through our icons, posts, and slides. If you want to chat about design, hit me up!",
+      description:<>
+        "Hi guys! My name is Thanjila and I am BYTE's graphic designer. As part of our E-Board, I work to elevate our club's visual branding throughout our social media and communications. Although I'm an EDM major, I have experience within the tech world as part of BYTE's first cohort and other various extracurriculars. You may see my work through our icons, posts, and slides. If you want to chat about design, hit me up!"
+      <br></br>
+      <a href="https://www.linkedin.com/in/thanjilat/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+           Follow Thanjila on LinkedIn!
+      </a>
+      </>,
       content: (
         <div className="h-full w-full  flex items-center justify-center">
           <Image
