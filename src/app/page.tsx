@@ -15,8 +15,14 @@ export default function Home() {
     const fetchProjects = async () => {
       try {
         const response = await fetch("https://test.byteccny.com/projects/get");
-        const data = await response.json();
-        setProjects(data);
+        
+        if (response.status != 200){
+          setProjects([])
+        }
+        else {
+          const data = await response.json();
+          setProjects(data);
+        }
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
